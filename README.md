@@ -1,11 +1,14 @@
-# OrbisCatholicusWiki
+<img align="center" alt="Samuel-Icon" src="https://media.discordapp.net/attachments/746489793646428160/1333501523249991792/logo_for_a_Catholic_church-related_wiki_company_with_a_book_and_the_cross_of_Christ.jpg?ex=67991f92&is=6797ce12&hm=c46ce817fd1354cc5d3c0e6348a91d82e5cb4199229906de892456348555bf82&=&format=webp" />
+
+# OrbisCatholicusWiki 
 
 Este é um sistema estilo Wiki, projetado para permitir que usuários criem, editem e validem informações de forma colaborativa.  
 O projeto é construído com foco em simplicidade, escalabilidade e boas práticas de desenvolvimento.
 
 ---
 
-## **Tecnologias Utilizadas** ⚙️  
+## **Tecnologias Utilizadas** ⚙️ <div style="display: inline_block"><img align="center" alt="Samuel-PHP" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/php/php-original.svg" /> <img align="center" alt="Samuel-LaraveL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/laravel/laravel-original.svg" /> <img align="center" alt="Samuel-VueJs" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/vuejs/vuejs-original.svg" /> <img align="center" alt="Samuel-PostegreSql" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/postgresql/postgresql-original.svg" />
+</div>
 
 ### **Backend**  
 - **PHP** com **Laravel**: Framework PHP robusto, utilizado para gerenciar as operações do lado do servidor e a lógica de negócios.  
