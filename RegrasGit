@@ -1,0 +1,39 @@
+Padrão de Prefixos
+
+Branchs:
+
+    Iniciais do seu perfil do git para as branchs.
+        Exemplo: SP/NomeDaBranch
+
+Commits:
+
+    new: Para adicionar novas funcionalidades ou módulos.
+        Exemplo: new/Adiciona-tela-de-login
+
+    update: Para melhorias ou atualizações em funcionalidades existentes.
+        Exemplo: update/Melhora-desempenho-do-carregamento-de-dados
+
+    fix: Para correções de bugs ou ajustes em comportamentos indesejados.
+        Exemplo: fix/Resolve-bug-no-formulário-de-cadastro
+
+    refactor: Para mudanças estruturais ou de organização do código, sem alterar o comportamento.
+        Exemplo: refactor/Reorganiza-classe-Controller
+
+    style: Para alterações de estilo ou formatação, sem impacto funcional.
+        Exemplo: style/Adiciona-padronização-ao-CSS
+
+    docs: Para alterações ou adições na documentação.
+        Exemplo: docs/Adiciona-tutorial-de-inicialização-do-projeto
+
+    test: Para adicionar ou modificar testes.
+        Exemplo: test/Cria-testes-para-a-classe-UserService
+
+    config: Para alterações em arquivos de configuração ou dependências.
+        Exemplo: config/Adiciona-suporte-ao-PostgreSQL
+
+    remove: Para remoção de funcionalidades, arquivos ou dependências obsoletas.
+        Exemplo: remove/Exclui-arquivo-de-configuração-antigo
+
+PullRequest:
+    
+    Sempre fazer o PR para o dono da branch "main"
