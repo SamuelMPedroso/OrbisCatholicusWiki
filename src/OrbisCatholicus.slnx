@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="OrbisCatholicus.API/OrbisCatholicus.API.csproj" />
+  <Project Path="OrbisCatholicus.Application/OrbisCatholicus.Application.csproj" />
+  <Project Path="OrbisCatholicus.Domain/OrbisCatholicus.Domain.csproj" />
+  <Project Path="OrbisCatholicus.Infrastructure/OrbisCatholicus.Infrastructure.csproj" />
+</Solution>
