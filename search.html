@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa — Orbis Catholicus Wiki</title>
+    <meta name="description" content="Pesquise artigos na enciclopédia católica Orbis Catholicus Wiki.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-top">
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo-area">
+                <i class="fas fa-book-bible logo-icon"></i>
+                <h1>
+                    <a href="index.html">Orbis Catholicus</a>
+                    <span class="subtitle">Enciclopédia Católica</span>
+                </h1>
+            </div>
+            <form class="header-search" action="search.html" method="get">
+                <input type="search" name="q" placeholder="Pesquisar na enciclopédia..." aria-label="Pesquisar">
+                <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+            </form>
+            <div class="header-user">
+                <a href="#" class="btn-create"><i class="fas fa-plus"></i> Novo Artigo</a>
+                <a href="#" class="btn-login">Entrar</a>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Portal</a></li>
+                <li><a href="category.html"><i class="fas fa-folder"></i> Categorias</a></li>
+                <li><a href="#"><i class="fas fa-clock-rotate-left"></i> Recentes</a></li>
+                <li><a href="#"><i class="fas fa-random"></i> Artigo Aleatório</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Comunidade</a></li>
+                <li><a href="#"><i class="fas fa-circle-info"></i> Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <h3>Navegação <i class="fas fa-chevron-down toggle"></i></h3>
+                <ul class="sidebar-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Página Principal</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> Mudanças Recentes</a></li>
+                    <li><a href="#"><i class="fas fa-random"></i> Artigo Aleatório</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Filtrar por Categoria <i class="fas fa-chevron-down toggle"></i></h3>
+                <ul class="sidebar-links">
+                    <li><a href="#"><i class="fas fa-globe"></i> Todas</a></li>
+                    <li><a href="#"><i class="fas fa-book-bible"></i> Doutrina</a></li>
+                    <li><a href="#"><i class="fas fa-cross"></i> Santos e Beatos</a></li>
+                    <li><a href="#"><i class="fas fa-church"></i> Liturgia</a></li>
+                    <li><a href="#"><i class="fas fa-landmark"></i> História da Igreja</a></li>
+                    <li><a href="#"><i class="fas fa-crown"></i> Papado</a></li>
+                    <li><a href="#"><i class="fas fa-hands-praying"></i> Ordens Religiosas</a></li>
+                    <li><a href="#"><i class="fas fa-dove"></i> Sacramentos</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Concílios</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Content -->
+        <main class="content-area">
+            <div class="breadcrumbs">
+                <a href="index.html">Início</a> <span>›</span>
+                Pesquisa
+            </div>
+
+            <div class="search-results">
+                <!-- Search Box -->
+                <div style="margin-bottom: 24px;">
+                    <h2 style="border: none; margin-bottom: 16px;">
+                        <i class="fas fa-search" style="color: var(--primary);"></i> Pesquisar Artigos
+                    </h2>
+                    <form action="search.html" method="get" style="display: flex; gap: 8px; max-width: 600px;">
+                        <input type="search" name="q" value="concílio" placeholder="Digite o termo de pesquisa..."
+                            style="flex: 1; padding: 10px 16px; border: 2px solid var(--border-medium); border-radius: 4px; font-size: 0.95rem; outline: none;"
+                            aria-label="Pesquisar">
+                        <button type="submit" 
+                            style="padding: 10px 24px; background: var(--primary); color: white; border: none; border-radius: 4px; font-size: 0.9rem; cursor: pointer; font-weight: 600;">
+                            <i class="fas fa-search"></i> Buscar
+                        </button>
+                    </form>
+                    <p style="margin-top: 8px; font-size: 0.82rem; color: var(--text-muted);">
+                        Exibindo resultados para: <strong>"concílio"</strong> — 47 artigos encontrados (0.12 segundos)
+                    </p>
+                </div>
+
+                <!-- Results -->
+                <div class="search-result-item">
+                    <h3><a href="article.html">Concílio de Trento</a></h3>
+                    <div class="result-url">orbiscatholicus.wiki/artigo/concilio-de-trento</div>
+                    <p class="result-snippet">
+                        O <em>Concílio</em> de Trento (1545–1563) foi o décimo nono <em>concílio</em> ecumênico da 
+                        Igreja Católica. Convocado pelo Papa Paulo III como resposta à Reforma Protestante, estabeleceu 
+                        importantes reformas doutrinárias e disciplinares...
+                    </p>
+                    <div style="margin-top: 6px;">
+                        <span class="badge badge-category" style="font-size: 0.72rem;">Concílios</span>
+                        <span style="font-size: 0.75rem; color: var(--text-muted); margin-left: 8px;">45.234 visualizações · Aprovado</span>
+                    </div>
+                </div>
+
+                <div class="search-result-item">
+                    <h3><a href="#">Concílio Vaticano II</a></h3>
+                    <div class="result-url">orbiscatholicus.wiki/artigo/concilio-vaticano-ii</div>
+                    <p class="result-snippet">
+                        O <em>Concílio</em> Vaticano II (1962–1965) foi o vigésimo primeiro e mais recente <em>concílio</em> 
+                        ecumênico da Igreja Católica. Convocado pelo Papa São João XXIII, promoveu uma ampla renovação 
+                        (aggiornamento) da vida eclesial...
+                    </p>
+                    <div style="margin-top: 6px;">
+                        <span class="badge badge-category" style="font-size: 0.72rem;">Concílios</span>
+                        <span style="font-size: 0.75rem; color: var(--text-muted); margin-left: 8px;">38.567 visualizações · Aprovado</span>
+                    </div>
+                </div>
+
+                <div class="search-result-item">
+                    <h3><a href="#">Concílio de Niceia I</a></h3>
+                    <div class="result-url">orbiscatholicus.wiki/artigo/concilio-de-niceia-i</div>
+                    <p class="result-snippet">
+                        O Primeiro <em>Concílio</em> de Niceia (325) foi o primeiro <em>concílio</em> ecumênico da 
+                        história. Convocado pelo imperador Constantino I, reuniu cerca de 318 bispos para resolver a 
+                        controvérsia ariana sobre a divindade de Cristo...
+                    </p>
+                    <div style="margin-top: 6px;">
+                        <span class="badge badge-category" style="font-size: 0.72rem;">Concílios</span>
+                        <span style="font-size: 0.75rem; color: var(--text-muted); margin-left: 8px;">22.890 visualizações · Aprovado</span>
+                    </div>
+                </div>
+
+                <div class="search-result-item">
+                    <h3><a href="#">Concílio Vaticano I</a></h3>
+                    <div class="result-url">orbiscatholicus.wiki/artigo/concilio-vaticano-i</div>
+                    <p class="result-snippet">
+                        O <em>Concílio</em> Vaticano I (1869–1870) foi o vigésimo <em>concílio</em> ecumênico da 
+                        Igreja. É especialmente conhecido pela definição dogmática da infalibilidade papal na constituição 
+                        <em>Pastor Aeternus</em>...
+                    </p>
+                    <div style="margin-top: 6px;">
+                        <span class="badge badge-category" style="font-size: 0.72rem;">Concílios</span>
+                        <span style="font-size: 0.75rem; color: var(--text-muted); margin-left: 8px;">18.345 visualizações · Aprovado</span>
+                    </div>
+                </div>
+
+                <div class="search-result-item">
+                    <h3><a href="#">Concílio de Calcedônia</a></h3>
+                    <div class="result-url">orbiscatholicus.wiki/artigo/concilio-de-calcedonia</div>
+                    <p class="result-snippet">
+                        O <em>Concílio</em> de Calcedônia (451) foi o quarto <em>concílio</em> ecumênico. Definiu a 
+                        doutrina cristológica das duas naturezas de Cristo — divina e humana — unidas numa só pessoa, 
+                        sem confusão, mudança, divisão ou separação...
+                    </p>
+                    <div style="margin-top: 6px;">
+                        <span class="badge badge-category" style="font-size: 0.72rem;">Concílios</span>
+                        <span style="font-size: 0.75rem; color: var(--text-muted); margin-left: 8px;">15.678 visualizações · Aprovado</span>
+                    </div>
+                </div>
+
+                <div class="search-result-item">
+                    <h3><a href="#">Concílio de Éfeso</a></h3>
+                    <div class="result-url">orbiscatholicus.wiki/artigo/concilio-de-efeso</div>
+                    <p class="result-snippet">
+                        O <em>Concílio</em> de Éfeso (431) definiu que Maria é verdadeiramente Theotokos (Mãe de Deus), 
+                        condenando a heresia nestoriana. Este <em>concílio</em> ecumênico marcou um ponto crucial na 
+                        mariologia e cristologia católicas...
+                    </p>
+                    <div style="margin-top: 6px;">
+                        <span class="badge badge-category" style="font-size: 0.72rem;">Concílios</span>
+                        <span style="font-size: 0.75rem; color: var(--text-muted); margin-left: 8px;">12.456 visualizações · Aprovado</span>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <span class="current">1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">Próxima →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Orbis Catholicus Wiki</h4>
+                <p>Enciclopédia católica colaborativa e livre.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Página Principal</a></li>
+                    <li><a href="category.html">Categorias</a></li>
+                    <li><a href="search.html">Pesquisa</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Comunidade</h4>
+                <ul>
+                    <li><a href="#">Guia de Edição</a></li>
+                    <li><a href="#">Políticas</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Projeto</h4>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Orbis Catholicus Wiki — Conteúdo disponível sob licença Creative Commons BY-SA 4.0</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

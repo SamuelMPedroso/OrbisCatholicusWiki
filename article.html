@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concílio de Trento — Orbis Catholicus Wiki</title>
+    <meta name="description" content="O Concílio de Trento (1545–1563) foi o décimo nono concílio ecumênico da Igreja Católica, convocado como resposta à Reforma Protestante.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- ====== Header ====== -->
+    <header class="site-header">
+        <div class="header-top">
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo-area">
+                <i class="fas fa-book-bible logo-icon"></i>
+                <h1>
+                    <a href="index.html">Orbis Catholicus</a>
+                    <span class="subtitle">Enciclopédia Católica</span>
+                </h1>
+            </div>
+            <form class="header-search" action="search.html" method="get">
+                <input type="search" name="q" placeholder="Pesquisar na enciclopédia..." aria-label="Pesquisar">
+                <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+            </form>
+            <div class="header-user">
+                <a href="#" class="btn-create"><i class="fas fa-plus"></i> Novo Artigo</a>
+                <a href="#" class="btn-login">Entrar</a>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Portal</a></li>
+                <li><a href="category.html"><i class="fas fa-folder"></i> Categorias</a></li>
+                <li><a href="#"><i class="fas fa-clock-rotate-left"></i> Recentes</a></li>
+                <li><a href="#"><i class="fas fa-random"></i> Artigo Aleatório</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Comunidade</a></li>
+                <li><a href="#"><i class="fas fa-circle-info"></i> Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <h3>Navegação <i class="fas fa-chevron-down toggle"></i></h3>
+                <ul class="sidebar-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Página Principal</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> Mudanças Recentes</a></li>
+                    <li><a href="#"><i class="fas fa-random"></i> Artigo Aleatório</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> Artigos em Destaque</a></li>
+                    <li><a href="search.html"><i class="fas fa-search"></i> Pesquisa Avançada</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Neste Artigo <i class="fas fa-chevron-down toggle"></i></h3>
+                <ul class="sidebar-links">
+                    <li><a href="#contexto"><i class="fas fa-angle-right"></i> Contexto Histórico</a></li>
+                    <li><a href="#sessoes"><i class="fas fa-angle-right"></i> As Sessões</a></li>
+                    <li><a href="#doutrina"><i class="fas fa-angle-right"></i> Decisões Doutrinárias</a></li>
+                    <li><a href="#reformas"><i class="fas fa-angle-right"></i> Reformas Disciplinares</a></li>
+                    <li><a href="#legado"><i class="fas fa-angle-right"></i> Legado</a></li>
+                    <li><a href="#referencias"><i class="fas fa-angle-right"></i> Referências</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Ferramentas <i class="fas fa-chevron-down toggle"></i></h3>
+                <ul class="sidebar-links">
+                    <li><a href="#"><i class="fas fa-link"></i> Link Permanente</a></li>
+                    <li><a href="#"><i class="fas fa-quote-right"></i> Citar Artigo</a></li>
+                    <li><a href="#"><i class="fas fa-print"></i> Versão para Impressão</a></li>
+                    <li><a href="#"><i class="fas fa-file-pdf"></i> Exportar PDF</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Content -->
+        <main class="content-area">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <a href="index.html">Início</a> <span>›</span>
+                <a href="category.html">Concílios</a> <span>›</span>
+                Concílio de Trento
+            </div>
+
+            <!-- Article Actions -->
+            <div class="article-actions">
+                <a href="#" class="active"><i class="fas fa-file-alt"></i> Artigo</a>
+                <a href="#"><i class="fas fa-comments"></i> Discussão</a>
+                <a href="#"><i class="fas fa-history"></i> Histórico</a>
+                <span class="sep"></span>
+                <a href="#"><i class="fas fa-edit"></i> Editar</a>
+                <a href="#"><i class="fas fa-star"></i> Favoritar</a>
+            </div>
+
+            <!-- Article Header -->
+            <div class="article-header">
+                <h1>Concílio de Trento</h1>
+                <div class="article-meta-bar">
+                    <span><i class="fas fa-user"></i> Pe. Rafael Mendes</span>
+                    <span><i class="fas fa-calendar"></i> 14 Mar 2026</span>
+                    <span><i class="fas fa-eye"></i> 45.234 visualizações</span>
+                    <span><i class="fas fa-code-branch"></i> Versão 12</span>
+                    <span class="badge badge-category"><i class="fas fa-users"></i> Concílios</span>
+                    <span class="badge badge-status" style="background: #28a745;">Aprovado</span>
+                </div>
+            </div>
+
+            <!-- Article Body -->
+            <div class="article-body clearfix">
+
+                <!-- Infobox -->
+                <div class="infobox">
+                    <div class="infobox-title">Concílio de Trento</div>
+                    <div class="infobox-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenRosePius_II.jpg/220px-GoldenRosePius_II.jpg" alt="Concílio de Trento - Pintura">
+                        <div class="caption">Representação do Concílio de Trento em sessão plenária</div>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Data</th>
+                            <td>1545 – 1563</td>
+                        </tr>
+                        <tr>
+                            <th>Local</th>
+                            <td>Trento e Bolonha, Itália</td>
+                        </tr>
+                        <tr>
+                            <th>Convocado por</th>
+                            <td>Papa Paulo III</td>
+                        </tr>
+                        <tr>
+                            <th>Presidentes</th>
+                            <td>Cardeais Del Monte, Cervini, Pole e outros</td>
+                        </tr>
+                        <tr>
+                            <th>Participantes</th>
+                            <td>~255 prelados no seu auge</td>
+                        </tr>
+                        <tr>
+                            <th>Número</th>
+                            <td>XIX Concílio Ecumênico</td>
+                        </tr>
+                    </table>
+                    <div class="infobox-section-header">Temas principais</div>
+                    <table>
+                        <tr>
+                            <td colspan="2" style="font-size: 0.82rem;">
+                                Contra-Reforma · Sacramentos · Justificação · Tradição · Escritura · Pecado Original · Eucaristia · Reforma clerical
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="infobox-section-header">Cronologia</div>
+                    <table>
+                        <tr>
+                            <th>Anterior</th>
+                            <td><a href="#">V Concílio de Latrão</a></td>
+                        </tr>
+                        <tr>
+                            <th>Seguinte</th>
+                            <td><a href="#">Concílio Vaticano I</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Table of Contents -->
+                <div class="toc">
+                    <div class="toc-title">Índice</div>
+                    <ol>
+                        <li><a href="#contexto">Contexto Histórico</a></li>
+                        <li><a href="#sessoes">As Sessões do Concílio</a>
+                            <ol>
+                                <li><a href="#primeiro-periodo">Primeiro Período (1545–1547)</a></li>
+                                <li><a href="#segundo-periodo">Segundo Período (1551–1552)</a></li>
+                                <li><a href="#terceiro-periodo">Terceiro Período (1562–1563)</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#doutrina">Decisões Doutrinárias</a></li>
+                        <li><a href="#reformas">Reformas Disciplinares</a></li>
+                        <li><a href="#legado">Legado</a></li>
+                        <li><a href="#referencias">Referências</a></li>
+                        <li><a href="#ver-tambem">Ver Também</a></li>
+                    </ol>
+                </div>
+
+                <p>
+                    O <strong>Concílio de Trento</strong> (em latim: <em>Concilium Tridentinum</em>) foi o décimo nono 
+                    <a href="#">concílio ecumênico</a> reconhecido pela <a href="#">Igreja Católica</a>. Realizado entre 
+                    1545 e 1563 na cidade de <a href="#">Trento</a> (atual norte da Itália), com algumas sessões em 
+                    <a href="#">Bolonha</a>, foi convocado pelo <a href="#">Papa Paulo III</a> como resposta à 
+                    <a href="#">Reforma Protestante</a> e às demandas de reforma interna da Igreja.
+                </p>
+
+                <p>
+                    O Concílio é considerado um dos mais importantes da história da Igreja, tendo definido com precisão 
+                    doutrinas católicas fundamentais e implementado reformas disciplinares que moldaram o catolicismo 
+                    por quatro séculos, até o <a href="#">Concílio Vaticano II</a> (1962–1965).
+                </p>
+
+                <h2 id="contexto">Contexto Histórico</h2>
+
+                <p>
+                    No início do <a href="#">século XVI</a>, a Igreja Católica enfrentava desafios sem precedentes. A 
+                    publicação das <a href="#">95 Teses</a> de <a href="#">Martinho Lutero</a> em 1517 desencadeou um 
+                    movimento de reforma que rapidamente se espalhou pela Europa. As críticas de Lutero — dirigidas 
+                    inicialmente contra a venda de <a href="#">indulgências</a> — evoluíram para questionamentos 
+                    teológicos mais profundos sobre a natureza da justificação, a autoridade das Escrituras e o papel 
+                    do papado.
+                </p>
+
+                <p>
+                    Além das questões doutrinais, havia uma ampla consciência da necessidade de reformas disciplinares. 
+                    O absentismo episcopal, o <a href="#">pluralismo beneficial</a>, a formação deficiente do clero e 
+                    outros abusos eram amplamente reconhecidos tanto por católicos quanto por protestantes. Vários 
+                    papas anteriores haviam tentado convocar um concílio geral, mas obstáculos políticos — especialmente 
+                    os conflitos entre a <a href="#">França</a> e o <a href="#">Sacro Império Romano-Germânico</a> — 
+                    impediram sua realização.
+                </p>
+
+                <blockquote>
+                    <p>
+                        «Se não reformarmos a nós mesmos, não será possível reformar os outros. A reforma deve começar 
+                        pela cabeça, para descer aos membros.»
+                    </p>
+                    <footer>— Papa Adriano VI, na Dieta de Nuremberg (1522)</footer>
+                </blockquote>
+
+                <h2 id="sessoes">As Sessões do Concílio</h2>
+
+                <p>
+                    O Concílio de Trento realizou-se em três períodos distintos, sob cinco pontífices diferentes, 
+                    totalizando 25 sessões solenes ao longo de 18 anos.
+                </p>
+
+                <h3 id="primeiro-periodo">Primeiro Período (1545–1547)</h3>
+
+                <p>
+                    Convocado pela bula <em>Laetare Hierusalem</em> de Paulo III em 1544, o concílio abriu oficialmente 
+                    em 13 de dezembro de 1545 com a presença de apenas 31 prelados. Este período foi particularmente 
+                    significativo pelas seguintes definições:
+                </p>
+
+                <ul>
+                    <li><strong>Cânon das Escrituras:</strong> definição do cânon bíblico católico, incluindo os livros 
+                        deuterocanônicos, e declaração da <a href="#">Vulgata</a> como tradução autêntica.</li>
+                    <li><strong>Tradição e Escritura:</strong> afirmação de que a Revelação divina se transmite tanto 
+                        pelas Sagradas Escrituras quanto pela Tradição Apostólica.</li>
+                    <li><strong>Pecado Original:</strong> definição dogmática sobre a natureza e consequências do 
+                        pecado original e o papel do Batismo.</li>
+                    <li><strong>Justificação:</strong> o decreto mais extenso, refutando a doutrina luterana do 
+                        <em>sola fide</em>, afirmando a cooperação da graça divina com a liberdade humana.</li>
+                </ul>
+
+                <h3 id="segundo-periodo">Segundo Período (1551–1552)</h3>
+
+                <p>
+                    Sob o pontificado de <a href="#">Júlio III</a>, as sessões foram retomadas em Trento. Este período 
+                    tratou especialmente da doutrina dos sacramentos:
+                </p>
+
+                <ul>
+                    <li><strong>Eucaristia:</strong> afirmação solene da <a href="#">transubstanciação</a> — a 
+                        presença real, verdadeira e substancial de Cristo sob as espécies do pão e do vinho.</li>
+                    <li><strong>Penitência e Unção dos Enfermos:</strong> definição da doutrina sobre estes 
+                        sacramentos, incluindo a necessidade da confissão auricular.</li>
+                </ul>
+
+                <h3 id="terceiro-periodo">Terceiro Período (1562–1563)</h3>
+
+                <p>
+                    Retomado sob <a href="#">Pio IV</a>, este foi o período mais produtivo. Entre as principais 
+                    decisões:
+                </p>
+
+                <ul>
+                    <li><strong>Sacrifício da Missa:</strong> afirmação do caráter sacrificial da Eucaristia.</li>
+                    <li><strong>Sacramento da Ordem:</strong> definição da hierarquia eclesiástica de direito divino.</li>
+                    <li><strong>Sacramento do Matrimônio:</strong> decreto <em>Tametsi</em>, estabelecendo a forma 
+                        canônica obrigatória para a validade do matrimônio.</li>
+                    <li><strong>Purgatório, Santos e Indulgências:</strong> reafirmação destas doutrinas com 
+                        orientações para evitar abusos.</li>
+                </ul>
+
+                <h2 id="doutrina">Decisões Doutrinárias</h2>
+
+                <p>
+                    As definições doutrinárias de Trento constituem um dos corpos mais sistemáticos de ensinamento 
+                    produzidos pela Igreja Católica. O concílio utilizou uma metodologia precisa: para cada ponto 
+                    doutrinário, eram promulgados <strong>decretos</strong> (exposições positivas da doutrina) e 
+                    <strong>cânones</strong> (condenações de posições consideradas heréticas, com a fórmula 
+                    <em>«Si quis dixerit... anathema sit»</em>).
+                </p>
+
+                <p>
+                    Entre as contribuições doutrinárias mais significativas destaca-se o <strong>Decreto sobre a 
+                    Justificação</strong> (Sessão VI, 1547), considerado por muitos teólogos como a mais completa 
+                    exposição sobre o tema na história da teologia católica. Este decreto apresentou uma via média 
+                    entre o <a href="#">pelagianismo</a> e o protestantismo, afirmando tanto a primazia da graça 
+                    quanto a cooperação da liberdade humana no processo de salvação.
+                </p>
+
+                <h2 id="reformas">Reformas Disciplinares</h2>
+
+                <p>
+                    Paralelamente às definições doutrinárias, o Concílio promulgou extensos decretos de reforma 
+                    que transformaram a vida da Igreja:
+                </p>
+
+                <ul>
+                    <li><strong>Residência episcopal obrigatória:</strong> os bispos foram obrigados a residir 
+                        nas suas dioceses, combatendo o absentismo generalizado.</li>
+                    <li><strong>Seminários:</strong> cada diocese passou a ser obrigada a manter um seminário 
+                        para formação adequada do clero — uma das reformas mais duradouras de Trento.</li>
+                    <li><strong>Pregação e catequese:</strong> obrigação de pregar regularmente e catequizar 
+                        o povo, levando à publicação do <em>Catecismo Romano</em> (1566).</li>
+                    <li><strong>Visitas pastorais:</strong> obrigação de visitas regulares às paróquias.</li>
+                    <li><strong>Reforma das ordens religiosas:</strong> restauração da disciplina nas comunidades 
+                        religiosas, com ênfase na clausura e na observância das regras.</li>
+                </ul>
+
+                <h2 id="legado">Legado</h2>
+
+                <p>
+                    O Concílio de Trento inaugurou uma era na história da Igreja Católica frequentemente chamada 
+                    de <strong>período tridentino</strong> ou <strong>era da Contra-Reforma</strong>. As suas 
+                    decisões moldaram praticamente todos os aspectos do catolicismo:
+                </p>
+
+                <ul>
+                    <li>A <a href="#">Missa Tridentina</a>, codificada pelo Papa Pio V em 1570, tornou-se a forma 
+                        normativa da liturgia romana até as reformas do Vaticano II.</li>
+                    <li>O <a href="#">Catecismo Romano</a> serviu como instrumento fundamental de catequese.</li>
+                    <li>O sistema de seminários transformou a formação clerical em toda a Igreja.</li>
+                    <li>A clarificação doutrinária fortaleceu a identidade católica frente ao protestantismo.</li>
+                </ul>
+
+                <p>
+                    A influência de Trento perdurou de maneira praticamente ininterrupta até o 
+                    <a href="#">Concílio Vaticano II</a> (1962–1965), que promoveu uma renovação e atualização 
+                    (<em>aggiornamento</em>) da Igreja, mantendo contudo a continuidade com a tradição tridentina.
+                </p>
+
+                <!-- Tags -->
+                <div class="tags-area">
+                    <strong>Tags:</strong>
+                    <a href="#" class="tag">Concílios Ecumênicos</a>
+                    <a href="#" class="tag">Contra-Reforma</a>
+                    <a href="#" class="tag">Século XVI</a>
+                    <a href="#" class="tag">Doutrina Católica</a>
+                    <a href="#" class="tag">Sacramentos</a>
+                    <a href="#" class="tag">Papa Paulo III</a>
+                    <a href="#" class="tag">Papa Pio IV</a>
+                    <a href="#" class="tag">Liturgia</a>
+                </div>
+
+                <!-- References -->
+                <div class="references" id="referencias">
+                    <h2>Referências</h2>
+                    <ol>
+                        <li>Jedin, Hubert. <em>Geschichte des Konzils von Trient</em>. 4 vols. Freiburg: Herder, 1949–1975.</li>
+                        <li>O'Malley, John W. <em>Trent: What Happened at the Council</em>. Cambridge: Harvard University Press, 2013.</li>
+                        <li>Denzinger, Heinrich. <em>Enchiridion Symbolorum</em>. Ed. Peter Hünermann. 43ª ed. Freiburg: Herder, 2012.</li>
+                        <li>Alberigo, Giuseppe (ed.). <em>Conciliorum Oecumenicorum Decreta</em>. Bologna: Istituto per le Scienze Religiose, 1973.</li>
+                        <li>Catecismo da Igreja Católica. <em>Compêndio</em>. Vaticano: Libreria Editrice Vaticana, 2005.</li>
+                        <li>Schroeder, H.J. <em>Canons and Decrees of the Council of Trent</em>. Rockford: TAN Books, 1978.</li>
+                    </ol>
+                </div>
+
+                <!-- See Also -->
+                <div class="references" id="ver-tambem">
+                    <h2>Ver Também</h2>
+                    <ul style="list-style: none; padding: 0; column-count: 2;">
+                        <li style="padding: 3px 0;">→ <a href="#">Concílio Vaticano I</a></li>
+                        <li style="padding: 3px 0;">→ <a href="#">Concílio Vaticano II</a></li>
+                        <li style="padding: 3px 0;">→ <a href="#">Contra-Reforma</a></li>
+                        <li style="padding: 3px 0;">→ <a href="#">Missa Tridentina</a></li>
+                        <li style="padding: 3px 0;">→ <a href="#">Papa Paulo III</a></li>
+                        <li style="padding: 3px 0;">→ <a href="#">Reforma Protestante</a></li>
+                        <li style="padding: 3px 0;">→ <a href="#">Catecismo Romano</a></li>
+                        <li style="padding: 3px 0;">→ <a href="#">Transubstanciação</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Orbis Catholicus Wiki</h4>
+                <p>
+                    Enciclopédia católica colaborativa e livre, dedicada a preservar e difundir o rico patrimônio 
+                    da fé católica.
+                </p>
+                <p style="margin-top: 8px; font-size: 0.78rem;">
+                    <em>«Ide por todo o mundo, e pregai o Evangelho a toda criatura.»</em> (Mc 16,15)
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Página Principal</a></li>
+                    <li><a href="category.html">Categorias</a></li>
+                    <li><a href="search.html">Pesquisa</a></li>
+                    <li><a href="#">Artigo Aleatório</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Comunidade</h4>
+                <ul>
+                    <li><a href="#">Guia de Edição</a></li>
+                    <li><a href="#">Políticas</a></li>
+                    <li><a href="#">Fórum</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Projeto</h4>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Orbis Catholicus Wiki — Conteúdo disponível sob licença Creative Commons BY-SA 4.0</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

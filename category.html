@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias — Orbis Catholicus Wiki</title>
+    <meta name="description" content="Explore os artigos do Orbis Catholicus Wiki organizados por categoria: doutrina, santos, liturgia, história e muito mais.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-top">
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo-area">
+                <i class="fas fa-book-bible logo-icon"></i>
+                <h1>
+                    <a href="index.html">Orbis Catholicus</a>
+                    <span class="subtitle">Enciclopédia Católica</span>
+                </h1>
+            </div>
+            <form class="header-search" action="search.html" method="get">
+                <input type="search" name="q" placeholder="Pesquisar na enciclopédia..." aria-label="Pesquisar">
+                <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+            </form>
+            <div class="header-user">
+                <a href="#" class="btn-create"><i class="fas fa-plus"></i> Novo Artigo</a>
+                <a href="#" class="btn-login">Entrar</a>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Portal</a></li>
+                <li><a href="category.html" class="active"><i class="fas fa-folder"></i> Categorias</a></li>
+                <li><a href="#"><i class="fas fa-clock-rotate-left"></i> Recentes</a></li>
+                <li><a href="#"><i class="fas fa-random"></i> Artigo Aleatório</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Comunidade</a></li>
+                <li><a href="#"><i class="fas fa-circle-info"></i> Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <h3>Navegação <i class="fas fa-chevron-down toggle"></i></h3>
+                <ul class="sidebar-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Página Principal</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> Mudanças Recentes</a></li>
+                    <li><a href="#"><i class="fas fa-random"></i> Artigo Aleatório</a></li>
+                    <li><a href="search.html"><i class="fas fa-search"></i> Pesquisa Avançada</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Todas as Categorias <i class="fas fa-chevron-down toggle"></i></h3>
+                <ul class="sidebar-links">
+                    <li class="active"><a href="#doutrina"><i class="fas fa-book-bible"></i> Doutrina</a></li>
+                    <li><a href="#santos"><i class="fas fa-cross"></i> Santos e Beatos</a></li>
+                    <li><a href="#liturgia"><i class="fas fa-church"></i> Liturgia</a></li>
+                    <li><a href="#historia"><i class="fas fa-landmark"></i> História da Igreja</a></li>
+                    <li><a href="#papado"><i class="fas fa-crown"></i> Papado</a></li>
+                    <li><a href="#ordens"><i class="fas fa-hands-praying"></i> Ordens Religiosas</a></li>
+                    <li><a href="#sacramentos"><i class="fas fa-dove"></i> Sacramentos</a></li>
+                    <li><a href="#direito"><i class="fas fa-scale-balanced"></i> Direito Canônico</a></li>
+                    <li><a href="#filosofia"><i class="fas fa-lightbulb"></i> Filosofia Cristã</a></li>
+                    <li><a href="#arte"><i class="fas fa-palette"></i> Arte Sacra</a></li>
+                    <li><a href="#mariologia"><i class="fas fa-star"></i> Mariologia</a></li>
+                    <li><a href="#concilios"><i class="fas fa-users"></i> Concílios</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Content -->
+        <main class="content-area">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <a href="index.html">Início</a> <span>›</span>
+                Categorias
+            </div>
+
+            <div class="category-header">
+                <h1><i class="fas fa-folder-open" style="color: var(--gold-dark);"></i> Categorias</h1>
+                <p>Explore os artigos organizados por temas. Selecione uma categoria para ver seus artigos.</p>
+            </div>
+
+            <div class="category-body">
+
+                <!-- Doutrina -->
+                <div class="section-box" style="margin-bottom: 24px;" id="doutrina">
+                    <div class="section-box-header">
+                        <i class="fas fa-book-bible"></i>
+                        <h3>Doutrina</h3>
+                        <span style="margin-left: auto; font-size: 0.78rem; color: var(--text-muted);">327 artigos</span>
+                    </div>
+                    <div class="section-box-body">
+                        <p style="margin-bottom: 12px; color: var(--text-secondary); font-size: 0.88rem;">
+                            Ensinamentos da fé católica, dogmas, teologia dogmática e moral, magistério da Igreja.
+                        </p>
+                        <div class="section-grid" style="margin-bottom: 0;">
+                            <div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary); margin-bottom: 6px;">Artigos Populares</h4>
+                                <ul class="article-list">
+                                    <li><a href="article.html">A Santíssima Trindade</a></li>
+                                    <li><a href="#">O Credo Niceno-Constantinopolitano</a></li>
+                                    <li><a href="#">Dogma da Infalibilidade Papal</a></li>
+                                    <li><a href="#">A Graça Santificante</a></li>
+                                    <li><a href="#">Pecado Original</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary); margin-bottom: 6px;">Subcategorias</h4>
+                                <ul class="article-list">
+                                    <li><a href="#">Teologia Dogmática</a> <span class="article-meta">78 artigos</span></li>
+                                    <li><a href="#">Teologia Moral</a> <span class="article-meta">65 artigos</span></li>
+                                    <li><a href="#">Magistério</a> <span class="article-meta">54 artigos</span></li>
+                                    <li><a href="#">Encíclicas</a> <span class="article-meta">89 artigos</span></li>
+                                    <li><a href="#">Dogmas</a> <span class="article-meta">41 artigos</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Santos e Beatos -->
+                <div class="section-box" style="margin-bottom: 24px;" id="santos">
+                    <div class="section-box-header">
+                        <i class="fas fa-cross"></i>
+                        <h3>Santos e Beatos</h3>
+                        <span style="margin-left: auto; font-size: 0.78rem; color: var(--text-muted);">584 artigos</span>
+                    </div>
+                    <div class="section-box-body">
+                        <p style="margin-bottom: 12px; color: var(--text-secondary); font-size: 0.88rem;">
+                            Biografias, hagiografias e festas dos santos canonizados e beatos da Igreja Católica.
+                        </p>
+                        <div class="section-grid" style="margin-bottom: 0;">
+                            <div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary); margin-bottom: 6px;">Artigos Populares</h4>
+                                <ul class="article-list">
+                                    <li><a href="#">São Francisco de Assis</a></li>
+                                    <li><a href="#">Santa Teresa de Ávila</a></li>
+                                    <li><a href="#">São Tomás de Aquino</a></li>
+                                    <li><a href="#">Santa Teresinha do Menino Jesus</a></li>
+                                    <li><a href="#">São João Paulo II</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary); margin-bottom: 6px;">Subcategorias</h4>
+                                <ul class="article-list">
+                                    <li><a href="#">Padres da Igreja</a> <span class="article-meta">33 artigos</span></li>
+                                    <li><a href="#">Doutores da Igreja</a> <span class="article-meta">36 artigos</span></li>
+                                    <li><a href="#">Mártires</a> <span class="article-meta">120 artigos</span></li>
+                                    <li><a href="#">Santos Fundadores</a> <span class="article-meta">67 artigos</span></li>
+                                    <li><a href="#">Beatos</a> <span class="article-meta">180 artigos</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Liturgia -->
+                <div class="section-box" style="margin-bottom: 24px;" id="liturgia">
+                    <div class="section-box-header">
+                        <i class="fas fa-church"></i>
+                        <h3>Liturgia</h3>
+                        <span style="margin-left: auto; font-size: 0.78rem; color: var(--text-muted);">213 artigos</span>
+                    </div>
+                    <div class="section-box-body">
+                        <p style="margin-bottom: 12px; color: var(--text-secondary); font-size: 0.88rem;">
+                            Ritos, celebrações litúrgicas, ano litúrgico, orações e tradições de culto na Igreja.
+                        </p>
+                        <div class="section-grid" style="margin-bottom: 0;">
+                            <div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary); margin-bottom: 6px;">Artigos Populares</h4>
+                                <ul class="article-list">
+                                    <li><a href="#">A Santa Missa</a></li>
+                                    <li><a href="#">Missa Tridentina</a></li>
+                                    <li><a href="#">O Ano Litúrgico</a></li>
+                                    <li><a href="#">Canto Gregoriano</a></li>
+                                    <li><a href="#">Liturgia das Horas</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary); margin-bottom: 6px;">Subcategorias</h4>
+                                <ul class="article-list">
+                                    <li><a href="#">Rito Romano</a> <span class="article-meta">45 artigos</span></li>
+                                    <li><a href="#">Ritos Orientais</a> <span class="article-meta">28 artigos</span></li>
+                                    <li><a href="#">Ano Litúrgico</a> <span class="article-meta">52 artigos</span></li>
+                                    <li><a href="#">Música Sacra</a> <span class="article-meta">34 artigos</span></li>
+                                    <li><a href="#">Devoções</a> <span class="article-meta">54 artigos</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- História da Igreja -->
+                <div class="section-box" style="margin-bottom: 24px;" id="historia">
+                    <div class="section-box-header">
+                        <i class="fas fa-landmark"></i>
+                        <h3>História da Igreja</h3>
+                        <span style="margin-left: auto; font-size: 0.78rem; color: var(--text-muted);">456 artigos</span>
+                    </div>
+                    <div class="section-box-body">
+                        <p style="margin-bottom: 12px; color: var(--text-secondary); font-size: 0.88rem;">
+                            Eventos históricos, períodos eclesiásticos, cismas, reformas e expansão missionária.
+                        </p>
+                        <div class="section-grid" style="margin-bottom: 0;">
+                            <div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary); margin-bottom: 6px;">Artigos Populares</h4>
+                                <ul class="article-list">
+                                    <li><a href="article.html">Concílio de Trento</a></li>
+                                    <li><a href="#">O Grande Cisma do Ocidente</a></li>
+                                    <li><a href="#">As Cruzadas</a></li>
+                                    <li><a href="#">A Inquisição</a></li>
+                                    <li><a href="#">Evangelização das Américas</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary); margin-bottom: 6px;">Subcategorias</h4>
+                                <ul class="article-list">
+                                    <li><a href="#">Igreja Primitiva</a> <span class="article-meta">67 artigos</span></li>
+                                    <li><a href="#">Idade Média</a> <span class="article-meta">98 artigos</span></li>
+                                    <li><a href="#">Reforma e Contra-Reforma</a> <span class="article-meta">56 artigos</span></li>
+                                    <li><a href="#">Igreja Moderna</a> <span class="article-meta">78 artigos</span></li>
+                                    <li><a href="#">Missões</a> <span class="article-meta">45 artigos</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Papado -->
+                <div class="section-box" style="margin-bottom: 24px;" id="papado">
+                    <div class="section-box-header">
+                        <i class="fas fa-crown"></i>
+                        <h3>Papado</h3>
+                        <span style="margin-left: auto; font-size: 0.78rem; color: var(--text-muted);">267 artigos</span>
+                    </div>
+                    <div class="section-box-body">
+                        <p style="margin-bottom: 12px; color: var(--text-secondary); font-size: 0.88rem;">
+                            A Sé Apostólica, história dos papas, conclaves, ensinamentos pontifícios e governo da Igreja.
+                        </p>
+                        <div class="section-grid" style="margin-bottom: 0;">
+                            <div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary); margin-bottom: 6px;">Artigos Populares</h4>
+                                <ul class="article-list">
+                                    <li><a href="#">São Pedro Apóstolo — Primeiro Papa</a></li>
+                                    <li><a href="#">Papa Leão XIII</a></li>
+                                    <li><a href="#">Papa São Pio X</a></li>
+                                    <li><a href="#">Papa Bento XVI</a></li>
+                                    <li><a href="#">Lista dos Papas</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary); margin-bottom: 6px;">Subcategorias</h4>
+                                <ul class="article-list">
+                                    <li><a href="#">Lista dos Papas</a> <span class="article-meta">266 artigos</span></li>
+                                    <li><a href="#">Conclaves</a> <span class="article-meta">34 artigos</span></li>
+                                    <li><a href="#">Encíclicas Papais</a> <span class="article-meta">89 artigos</span></li>
+                                    <li><a href="#">Cúria Romana</a> <span class="article-meta">23 artigos</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ordens Religiosas -->
+                <div class="section-box" style="margin-bottom: 24px;" id="ordens">
+                    <div class="section-box-header">
+                        <i class="fas fa-hands-praying"></i>
+                        <h3>Ordens Religiosas</h3>
+                        <span style="margin-left: auto; font-size: 0.78rem; color: var(--text-muted);">189 artigos</span>
+                    </div>
+                    <div class="section-box-body">
+                        <p style="margin-bottom: 12px; color: var(--text-secondary); font-size: 0.88rem;">
+                            Congregações, ordens monásticas, mendicantes, institutos religiosos e vida consagrada.
+                        </p>
+                        <ul class="article-list">
+                            <li><a href="#">Ordem de São Bento (Beneditinos)</a></li>
+                            <li><a href="#">Ordem dos Pregadores (Dominicanos)</a></li>
+                            <li><a href="#">Ordem dos Frades Menores (Franciscanos)</a></li>
+                            <li><a href="#">Companhia de Jesus (Jesuítas)</a></li>
+                            <li><a href="#">Ordem do Carmo (Carmelitas)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sacramentos -->
+                <div class="section-box" style="margin-bottom: 24px;" id="sacramentos">
+                    <div class="section-box-header">
+                        <i class="fas fa-dove"></i>
+                        <h3>Sacramentos</h3>
+                        <span style="margin-left: auto; font-size: 0.78rem; color: var(--text-muted);">98 artigos</span>
+                    </div>
+                    <div class="section-box-body">
+                        <p style="margin-bottom: 12px; color: var(--text-secondary); font-size: 0.88rem;">
+                            Os sete sacramentos da Igreja, sua teologia, liturgia e história.
+                        </p>
+                        <ul class="article-list">
+                            <li><a href="#">Batismo</a></li>
+                            <li><a href="#">Confirmação (Crisma)</a></li>
+                            <li><a href="#">Eucaristia</a></li>
+                            <li><a href="#">Penitência e Reconciliação</a></li>
+                            <li><a href="#">Unção dos Enfermos</a></li>
+                            <li><a href="#">Ordem (Sacramento da Ordem)</a></li>
+                            <li><a href="#">Matrimônio</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- More categories in compact grid -->
+                <div class="section-grid" style="margin-bottom: 24px;">
+                    <div class="section-box" id="direito">
+                        <div class="section-box-header">
+                            <i class="fas fa-scale-balanced"></i>
+                            <h3>Direito Canônico</h3>
+                        </div>
+                        <div class="section-box-body">
+                            <ul class="article-list">
+                                <li><a href="#">Código de Direito Canônico</a></li>
+                                <li><a href="#">Processo de Canonização</a></li>
+                                <li><a href="#">Excomunhão</a></li>
+                                <li><a href="#">Tribunais Eclesiásticos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-box" id="filosofia">
+                        <div class="section-box-header">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Filosofia Cristã</h3>
+                        </div>
+                        <div class="section-box-body">
+                            <ul class="article-list">
+                                <li><a href="#">Tomismo</a></li>
+                                <li><a href="#">Escolástica</a></li>
+                                <li><a href="#">Patrística</a></li>
+                                <li><a href="#">Personalismo Cristão</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-grid" style="margin-bottom: 24px;">
+                    <div class="section-box" id="arte">
+                        <div class="section-box-header">
+                            <i class="fas fa-palette"></i>
+                            <h3>Arte Sacra</h3>
+                        </div>
+                        <div class="section-box-body">
+                            <ul class="article-list">
+                                <li><a href="#">Basílica de São Pedro</a></li>
+                                <li><a href="#">Capela Sistina</a></li>
+                                <li><a href="#">Iconografia Cristã</a></li>
+                                <li><a href="#">Arquitetura Gótica</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-box" id="mariologia">
+                        <div class="section-box-header">
+                            <i class="fas fa-star"></i>
+                            <h3>Mariologia</h3>
+                        </div>
+                        <div class="section-box-body">
+                            <ul class="article-list">
+                                <li><a href="#">Imaculada Conceição</a></li>
+                                <li><a href="#">Assunção de Maria</a></li>
+                                <li><a href="#">Aparições Marianas</a></li>
+                                <li><a href="#">Nossa Senhora de Fátima</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concílios -->
+                <div class="section-box" style="margin-bottom: 24px;" id="concilios">
+                    <div class="section-box-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Concílios</h3>
+                        <span style="margin-left: auto; font-size: 0.78rem; color: var(--text-muted);">103 artigos</span>
+                    </div>
+                    <div class="section-box-body">
+                        <p style="margin-bottom: 12px; color: var(--text-secondary); font-size: 0.88rem;">
+                            Os 21 concílios ecumênicos da Igreja e os principais concílios regionais.
+                        </p>
+                        <ul class="article-list">
+                            <li><a href="#">Concílio de Niceia I (325)</a></li>
+                            <li><a href="#">Concílio de Calcedônia (451)</a></li>
+                            <li><a href="article.html">Concílio de Trento (1545–1563)</a></li>
+                            <li><a href="#">Concílio Vaticano I (1869–1870)</a></li>
+                            <li><a href="#">Concílio Vaticano II (1962–1965)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Orbis Catholicus Wiki</h4>
+                <p>Enciclopédia católica colaborativa e livre.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Página Principal</a></li>
+                    <li><a href="category.html">Categorias</a></li>
+                    <li><a href="search.html">Pesquisa</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Comunidade</h4>
+                <ul>
+                    <li><a href="#">Guia de Edição</a></li>
+                    <li><a href="#">Políticas</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Projeto</h4>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Orbis Catholicus Wiki — Conteúdo disponível sob licença Creative Commons BY-SA 4.0</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

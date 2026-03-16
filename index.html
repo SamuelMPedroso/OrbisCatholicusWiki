@@ -1,11 +1,483 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ObisCatholicusWiki</title>
+    <title>Orbis Catholicus Wiki — Enciclopédia Católica Colaborativa</title>
+    <meta name="description" content="Orbis Catholicus Wiki é uma enciclopédia católica colaborativa com artigos sobre doutrina, santos, liturgia, história da Igreja e muito mais.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+
+    <!-- ====== Header ====== -->
+    <header class="site-header">
+        <div class="header-top">
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo-area">
+                <i class="fas fa-book-bible logo-icon"></i>
+                <h1>
+                    <a href="index.html">Orbis Catholicus</a>
+                    <span class="subtitle">Enciclopédia Católica</span>
+                </h1>
+            </div>
+            <form class="header-search" action="search.html" method="get">
+                <input type="search" name="q" placeholder="Pesquisar na enciclopédia..." aria-label="Pesquisar">
+                <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+            </form>
+            <div class="header-user">
+                <a href="#" class="btn-create"><i class="fas fa-plus"></i> Novo Artigo</a>
+                <a href="#" class="btn-login">Entrar</a>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Portal</a></li>
+                <li><a href="category.html"><i class="fas fa-folder"></i> Categorias</a></li>
+                <li><a href="#"><i class="fas fa-clock-rotate-left"></i> Recentes</a></li>
+                <li><a href="#"><i class="fas fa-random"></i> Artigo Aleatório</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Comunidade</a></li>
+                <li><a href="#"><i class="fas fa-circle-info"></i> Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ====== Sidebar Overlay (Mobile) ====== -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- ====== Main Layout ====== -->
+    <div class="main-layout">
+        
+        <!-- ====== Sidebar ====== -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <h3>Navegação <i class="fas fa-chevron-down toggle"></i></h3>
+                <ul class="sidebar-links">
+                    <li class="active"><a href="index.html"><i class="fas fa-home"></i> Página Principal</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> Mudanças Recentes</a></li>
+                    <li><a href="#"><i class="fas fa-random"></i> Artigo Aleatório</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> Artigos em Destaque</a></li>
+                    <li><a href="search.html"><i class="fas fa-search"></i> Pesquisa Avançada</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Categorias <i class="fas fa-chevron-down toggle"></i></h3>
+                <ul class="sidebar-links">
+                    <li><a href="category.html"><i class="fas fa-book-bible"></i> Doutrina</a></li>
+                    <li><a href="category.html"><i class="fas fa-cross"></i> Santos e Beatos</a></li>
+                    <li><a href="category.html"><i class="fas fa-church"></i> Liturgia</a></li>
+                    <li><a href="category.html"><i class="fas fa-landmark"></i> História da Igreja</a></li>
+                    <li><a href="category.html"><i class="fas fa-crown"></i> Papado</a></li>
+                    <li><a href="category.html"><i class="fas fa-hands-praying"></i> Ordens Religiosas</a></li>
+                    <li><a href="category.html"><i class="fas fa-dove"></i> Sacramentos</a></li>
+                    <li><a href="category.html"><i class="fas fa-scale-balanced"></i> Direito Canônico</a></li>
+                    <li><a href="category.html"><i class="fas fa-lightbulb"></i> Filosofia Cristã</a></li>
+                    <li><a href="category.html"><i class="fas fa-palette"></i> Arte Sacra</a></li>
+                    <li><a href="category.html"><i class="fas fa-star"></i> Mariologia</a></li>
+                    <li><a href="category.html"><i class="fas fa-users"></i> Concílios</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Contribuir <i class="fas fa-chevron-down toggle"></i></h3>
+                <ul class="sidebar-links">
+                    <li><a href="#"><i class="fas fa-plus-circle"></i> Criar Artigo</a></li>
+                    <li><a href="#"><i class="fas fa-clipboard-check"></i> Revisões Pendentes</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i> Guia de Edição</a></li>
+                    <li><a href="#"><i class="fas fa-comments"></i> Fórum</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Ferramentas <i class="fas fa-chevron-down toggle"></i></h3>
+                <ul class="sidebar-links">
+                    <li><a href="#"><i class="fas fa-link"></i> Links Externos</a></li>
+                    <li><a href="#"><i class="fas fa-upload"></i> Enviar Mídia</a></li>
+                    <li><a href="#"><i class="fas fa-chart-bar"></i> Estatísticas</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- ====== Content ====== -->
+        <main class="content-area">
+            <!-- Portal Banner -->
+            <div class="portal-banner">
+                <h2>✝ Bem-vindo ao Orbis Catholicus Wiki</h2>
+                <p class="portal-subtitle">A enciclopédia católica livre que todos podem editar</p>
+                <div class="portal-stats">
+                    <div class="stat">
+                        <span class="stat-number">2.847</span>
+                        <span class="stat-label">Artigos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Categorias</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">534</span>
+                        <span class="stat-label">Colaboradores</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1.2M</span>
+                        <span class="stat-label">Visualizações</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portal-content">
+                
+                <!-- Liturgical Today -->
+                <div class="liturgical-today">
+                    <div class="lit-date"><i class="fas fa-calendar-day"></i> 16 de Março de 2026 — Segunda-feira da 3ª Semana da Quaresma</div>
+                    <div class="lit-feast">Santo do Dia: São Heribert de Colônia</div>
+                    <div class="lit-description">Arcebispo de Colônia, conhecido pela sua piedade e caridade para com os pobres. Celebrado pela sua dedicação à oração e ao serviço pastoral.</div>
+                </div>
+
+                <!-- Featured Article -->
+                <div class="featured-article">
+                    <div class="featured-header">
+                        <i class="fas fa-star"></i>
+                        <h3>Artigo em Destaque</h3>
+                    </div>
+                    <div class="featured-body">
+                        <div class="featured-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenRosePius_II.jpg/220px-GoldenRosePius_II.jpg" alt="Concílio de Trento">
+                        </div>
+                        <div class="featured-text">
+                            <h4><a href="article.html">Concílio de Trento</a></h4>
+                            <p>
+                                O <strong>Concílio de Trento</strong> (1545–1563) foi o décimo nono concílio ecumênico reconhecido 
+                                pela Igreja Católica. Convocado pelo Papa Paulo III, foi uma das respostas mais significativas da 
+                                Igreja à Reforma Protestante. O concílio estabeleceu importantes reformas doutrinárias e disciplinares, 
+                                reafirmando os ensinamentos católicos sobre a Eucaristia, os sacramentos, o papel da Tradição ao 
+                                lado das Escrituras, e o pecado original. As decisões tridentinas moldaram profundamente o 
+                                catolicismo por quatro séculos, até o Concílio Vaticano II...
+                            </p>
+                            <a href="article.html" class="read-more">Continuar lendo →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Grid -->
+                <div class="section-grid">
+                    <!-- Did You Know? -->
+                    <div class="section-box">
+                        <div class="section-box-header">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Sabia que...</h3>
+                        </div>
+                        <div class="section-box-body">
+                            <ul class="article-list" style="list-style: none; padding: 0;">
+                                <li style="border-bottom: 1px solid #f0f0f0; padding: 6px 0;">
+                                    ✦ ...a <a href="article.html">Basílica de São Pedro</a> levou mais de 120 anos para ser construída?
+                                </li>
+                                <li style="border-bottom: 1px solid #f0f0f0; padding: 6px 0;">
+                                    ✦ ...o <a href="#">Rosário</a> como o conhecemos foi popularizado por São Domingos de Gusmão no século XIII?
+                                </li>
+                                <li style="border-bottom: 1px solid #f0f0f0; padding: 6px 0;">
+                                    ✦ ...Santa Hildegarda de Bingen é considerada a primeira naturalista da Alemanha medieval?
+                                </li>
+                                <li style="padding: 6px 0;">
+                                    ✦ ...o <a href="#">Canto Gregoriano</a> recebe seu nome do Papa Gregório I, embora sua origem seja anterior?
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Recent Articles -->
+                    <div class="section-box">
+                        <div class="section-box-header">
+                            <i class="fas fa-clock"></i>
+                            <h3>Artigos Recentes</h3>
+                        </div>
+                        <div class="section-box-body">
+                            <ul class="article-list">
+                                <li>
+                                    <a href="article.html">Papa Leão XIII e a Encíclica Rerum Novarum</a>
+                                    <div class="article-meta">Autor: Pe. Rafael Mendes · Há 2 horas</div>
+                                </li>
+                                <li>
+                                    <a href="#">Ordem dos Carmelitas Descalços</a>
+                                    <div class="article-meta">Autor: Maria Silva · Há 5 horas</div>
+                                </li>
+                                <li>
+                                    <a href="#">Rito Tridentino: História e Significado</a>
+                                    <div class="article-meta">Autor: João Baptista · Há 8 horas</div>
+                                </li>
+                                <li>
+                                    <a href="#">São Tomás de Aquino e a Suma Teológica</a>
+                                    <div class="article-meta">Autor: Ana Figueira · Ontem</div>
+                                </li>
+                                <li>
+                                    <a href="#">O Dogma da Imaculada Conceição</a>
+                                    <div class="article-meta">Autor: Francisco Xavier · Ontem</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categories Section Title -->
+                <div class="section-box" style="margin-bottom: 20px;">
+                    <div class="section-box-header">
+                        <i class="fas fa-folder-open"></i>
+                        <h3>Explorar por Categoria</h3>
+                    </div>
+                </div>
+
+                <!-- Categories Grid -->
+                <div class="categories-grid">
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-book-bible"></i>
+                        <h4>Doutrina</h4>
+                        <p>327 artigos</p>
+                    </a>
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-cross"></i>
+                        <h4>Santos e Beatos</h4>
+                        <p>584 artigos</p>
+                    </a>
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-church"></i>
+                        <h4>Liturgia</h4>
+                        <p>213 artigos</p>
+                    </a>
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-landmark"></i>
+                        <h4>História da Igreja</h4>
+                        <p>456 artigos</p>
+                    </a>
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-crown"></i>
+                        <h4>Papado</h4>
+                        <p>267 artigos</p>
+                    </a>
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-hands-praying"></i>
+                        <h4>Ordens Religiosas</h4>
+                        <p>189 artigos</p>
+                    </a>
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-dove"></i>
+                        <h4>Sacramentos</h4>
+                        <p>98 artigos</p>
+                    </a>
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-scale-balanced"></i>
+                        <h4>Direito Canônico</h4>
+                        <p>134 artigos</p>
+                    </a>
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Filosofia Cristã</h4>
+                        <p>178 artigos</p>
+                    </a>
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-palette"></i>
+                        <h4>Arte Sacra</h4>
+                        <p>156 artigos</p>
+                    </a>
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-star"></i>
+                        <h4>Mariologia</h4>
+                        <p>142 artigos</p>
+                    </a>
+                    <a href="category.html" class="category-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Concílios</h4>
+                        <p>103 artigos</p>
+                    </a>
+                </div>
+
+                <!-- Second Grid -->
+                <div class="section-grid">
+                    <!-- Most Viewed -->
+                    <div class="section-box">
+                        <div class="section-box-header">
+                            <i class="fas fa-fire"></i>
+                            <h3>Mais Lidos</h3>
+                        </div>
+                        <div class="section-box-body">
+                            <ul class="article-list">
+                                <li>
+                                    <a href="article.html">Concílio de Trento</a>
+                                    <div class="article-meta">45.234 visualizações</div>
+                                </li>
+                                <li>
+                                    <a href="#">Santa Teresa de Ávila</a>
+                                    <div class="article-meta">38.102 visualizações</div>
+                                </li>
+                                <li>
+                                    <a href="#">A Eucaristia: Presença Real de Cristo</a>
+                                    <div class="article-meta">32.876 visualizações</div>
+                                </li>
+                                <li>
+                                    <a href="#">São Francisco de Assis</a>
+                                    <div class="article-meta">28.543 visualizações</div>
+                                </li>
+                                <li>
+                                    <a href="#">Os Padres da Igreja</a>
+                                    <div class="article-meta">25.190 visualizações</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Quote / Thought -->
+                    <div class="section-box">
+                        <div class="section-box-header">
+                            <i class="fas fa-quote-left"></i>
+                            <h3>Pensamento do Dia</h3>
+                        </div>
+                        <div class="section-box-body">
+                            <blockquote style="border-left: 4px solid #c5a028; padding: 12px 16px; background: #fdf5e6; margin: 0;">
+                                <p style="font-style: italic; font-size: 0.95rem; line-height: 1.6;">
+                                    «A medida do amor é amar sem medida.»
+                                </p>
+                                <footer style="font-style: normal; font-size: 0.85rem; color: #72777d; margin-top: 8px;">
+                                    — <strong>Santo Agostinho de Hipona</strong>, Padre e Doutor da Igreja (354–430)
+                                </footer>
+                            </blockquote>
+                            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid #e0d8c8;">
+                                <p style="font-size: 0.85rem; color: #54595d;">
+                                    <strong>Sobre o autor:</strong> Santo Agostinho é um dos mais influentes teólogos e filósofos 
+                                    da história cristã. Bispo de Hipona no norte da África, suas obras <em>Confissões</em> 
+                                    e <em>A Cidade de Deus</em> são referências fundamentais da teologia católica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Grid - Community Activity -->
+                <div class="section-grid three-cols">
+                    <div class="section-box">
+                        <div class="section-box-header">
+                            <i class="fas fa-edit"></i>
+                            <h3>Aguardando Revisão</h3>
+                        </div>
+                        <div class="section-box-body">
+                            <ul class="article-list">
+                                <li>
+                                    <a href="#">Santa Faustina Kowalska</a>
+                                    <div class="article-meta"><span style="color: #ffc107;">● Pendente</span> · Há 3 horas</div>
+                                </li>
+                                <li>
+                                    <a href="#">A Devoção ao Sagrado Coração</a>
+                                    <div class="article-meta"><span style="color: #ffc107;">● Pendente</span> · Há 6 horas</div>
+                                </li>
+                                <li>
+                                    <a href="#">Ordem dos Pregadores</a>
+                                    <div class="article-meta"><span style="color: #17a2b8;">● Em Revisão</span> · Há 1 dia</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-box">
+                        <div class="section-box-header">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Top Colaboradores</h3>
+                        </div>
+                        <div class="section-box-body">
+                            <ul class="article-list">
+                                <li>
+                                    <a href="#">Pe. Rafael Mendes</a>
+                                    <div class="article-meta">142 artigos · Revisor</div>
+                                </li>
+                                <li>
+                                    <a href="#">Maria C. Silva</a>
+                                    <div class="article-meta">98 artigos · Autora</div>
+                                </li>
+                                <li>
+                                    <a href="#">João B. Ferreira</a>
+                                    <div class="article-meta">87 artigos · Autor</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-box">
+                        <div class="section-box-header">
+                            <i class="fas fa-bullhorn"></i>
+                            <h3>Avisos</h3>
+                        </div>
+                        <div class="section-box-body">
+                            <ul class="article-list">
+                                <li>
+                                    <a href="#">Novo guia de referências bibliográficas</a>
+                                    <div class="article-meta">15 Mar 2026</div>
+                                </li>
+                                <li>
+                                    <a href="#">Mutirão: artigos sobre Quaresma</a>
+                                    <div class="article-meta">10 Mar 2026</div>
+                                </li>
+                                <li>
+                                    <a href="#">Manutenção agendada 20/03</a>
+                                    <div class="article-meta">08 Mar 2026</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- ====== Footer ====== -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Orbis Catholicus Wiki</h4>
+                <p>
+                    Enciclopédia católica colaborativa e livre, dedicada a preservar e difundir o rico patrimônio 
+                    da fé católica. Todo o conteúdo é revisado por moderadores para garantir fidelidade à doutrina 
+                    e rigor histórico.
+                </p>
+                <p style="margin-top: 8px; font-size: 0.78rem;">
+                    <em>«Ide por todo o mundo, e pregai o Evangelho a toda criatura.»</em> (Mc 16,15)
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Página Principal</a></li>
+                    <li><a href="category.html">Categorias</a></li>
+                    <li><a href="search.html">Pesquisa</a></li>
+                    <li><a href="#">Artigo Aleatório</a></li>
+                    <li><a href="#">Mudanças Recentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Comunidade</h4>
+                <ul>
+                    <li><a href="#">Guia de Edição</a></li>
+                    <li><a href="#">Políticas</a></li>
+                    <li><a href="#">Fórum</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Projeto</h4>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Código de Conduta</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Orbis Catholicus Wiki — Conteúdo disponível sob licença Creative Commons BY-SA 4.0</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
