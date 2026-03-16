@@ -1,0 +1,15 @@
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\bin\Debug\net10.0\OrbisCatholicus.Application.deps.json
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\bin\Debug\net10.0\OrbisCatholicus.Application.dll
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\bin\Debug\net10.0\OrbisCatholicus.Application.pdb
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\bin\Debug\net10.0\OrbisCatholicus.Domain.dll
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\bin\Debug\net10.0\OrbisCatholicus.Domain.pdb
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\obj\Debug\net10.0\OrbisCatholicus.Application.csproj.AssemblyReference.cache
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\obj\Debug\net10.0\OrbisCatholicus.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\obj\Debug\net10.0\OrbisCatholicus.Application.AssemblyInfoInputs.cache
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\obj\Debug\net10.0\OrbisCatholicus.Application.AssemblyInfo.cs
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\obj\Debug\net10.0\OrbisCatholicus.Application.csproj.CoreCompileInputs.cache
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\obj\Debug\net10.0\OrbisCat.9CF4E58F.Up2Date
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\obj\Debug\net10.0\OrbisCatholicus.Application.dll
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\obj\Debug\net10.0\refint\OrbisCatholicus.Application.dll
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\obj\Debug\net10.0\OrbisCatholicus.Application.pdb
+C:\ProjetosPessoal\OrbisCatholicusWiki\src\OrbisCatholicus.Application\obj\Debug\net10.0\ref\OrbisCatholicus.Application.dll
