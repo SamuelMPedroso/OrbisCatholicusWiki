@@ -1,0 +1,6 @@
+@OrbisCatholicus.API_HostAddress = http://localhost:5288
+
+GET {{OrbisCatholicus.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
